@@ -1,0 +1,35 @@
+/* Ellipse 7 */
+.ellipse5 {
+  box-sizing: border-box;
+
+  opacity: 0.1;
+  /* Dark Copy */
+  border: 1px solid #23242c;
+  border-radius: 360px;
+  width: 572px;
+  height: 572px;
+  position: absolute;
+  right: 15%;
+  top: 17.5%;
+  z-index: -1;
+}
+
+.ellipse6 {
+  box-sizing: border-box;
+  border: 1px solid #fae2d666;
+  border-radius: 360px;
+  width: 261px;
+  height: 261px;
+  position: absolute;
+  right: 26%;
+  top: 30.25%;
+
+  z-index: -1;
+  background: rgba(250, 226, 214, 0.4);
+}
+
+@media screen and (max-width: 530px) {
+  .ellipse6 {
+    top: 22.25%;
+  }
+}

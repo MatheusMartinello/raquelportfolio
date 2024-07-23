@@ -1,0 +1,37 @@
+/* Underline styles */
+.text-decoration {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Fade in */
+.text-decoration::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(207, 173, 172);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.text-decoration:hover::after,
+.text-decoration:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+/* Scale from center */
+.text-decoration::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.text-decoration:hover::after,
+.text-decoration:focus::after {
+  transform: scale(1);
+}

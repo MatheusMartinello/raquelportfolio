@@ -1,0 +1,11 @@
+.gray-lines {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, lightgray 1px, transparent 1px),
+    linear-gradient(to right, lightgray 1px, transparent 1px),
+    linear-gradient(to right, lightgray 1px, transparent 1px),
+    linear-gradient(to right, lightgray 1px, transparent 1px),
+    linear-gradient(to right, lightgray 1px, transparent 1px);
+  background-size: 100% 5px;
+  background-repeat: repeat-y;
+}

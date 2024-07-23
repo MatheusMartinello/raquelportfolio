@@ -1,0 +1,16 @@
+.gray-lines {
+  background: repeating-linear-gradient(
+    to left,
+    lightgray,
+    lightgray 1px,
+    transparent 1px,
+    transparent
+  );
+  background-size: 240px;
+  padding: 1px;
+}
+@media screen and (max-width: 750px) {
+  .gray-lines {
+    background: none;
+  }
+}

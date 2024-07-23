@@ -1,0 +1,98 @@
+.div-com-elipses {
+  position: relative;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+  margin: 50px;
+}
+
+.div-com-elipses::before,
+.div-com-elipses::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.div-com-elipses::before {
+  width: 600px; /* Largura da elipse externa (proporcionalmente menor que a interna) */
+  height: 600px; /* Altura da elipse interna */
+  border-radius: 50%;
+  opacity: 0.1;
+
+  right: -11%;
+  border: 1px solid #23242c;
+  /* Cor da elipse externa */
+}
+
+.div-com-elipses::after {
+  width: 300px; /* Largura da elipse interna */
+  height: 300px; /* Altura da elipse interna */
+  border-radius: 50%;
+  background-color: #cca89a75; /* Cor da elipse interna */
+  right: 11%;
+}
+
+.ellipse1 {
+  box-sizing: border-box;
+
+  opacity: 0.1;
+  /* Dark Copy */
+  border: 1px solid #23242c;
+  border-radius: 360px;
+  width: 572px;
+  height: 572px;
+  position: absolute;
+  right: 20%;
+  top: 1%;
+  z-index: -1;
+}
+
+.ellipse2 {
+  box-sizing: border-box;
+  border: 1px solid #fae2d666;
+  border-radius: 360px;
+  width: 261px;
+  height: 261px;
+  position: absolute;
+  right: 30%;
+  bottom: 3%;
+
+  z-index: -100;
+  background: #cca89a;
+}
+@media screen and (max-width: 540px) {
+  .ellipse2 {
+    bottom: 3.5%;
+    z-index: -100;
+    right: 60%;
+  }
+
+  .div-com-elipses::before {
+    width: 300px; /* Largura da elipse externa (proporcionalmente menor que a interna) */
+    height: 300px; /* Altura da elipse interna */
+    border-radius: 50%;
+    opacity: 0.1;
+
+    border: 1px solid #23242c;
+    /* Cor da elipse externa */
+  }
+
+  .div-com-elipses::after {
+    width: 150px; /* Largura da elipse interna */
+    height: 150px; /* Altura da elipse interna */
+    border-radius: 50%;
+    background-color: #cca89a2b; /* Cor da elipse interna */
+    right: 32%;
+  }
+  .div-com-elipses {
+    margin: 50px 15px;
+  }
+  @media screen and (max-width: 750px) {
+    .div-com-elipses {
+      margin: 0px 15px;
+    }
+  }
+}
